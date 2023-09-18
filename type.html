@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="type.css">
+    <script src="type.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="input-field">
+        <div class="content-box">
+            <div class="typing-text">
+            </div>
+            <div class="content">
+                <ul class="details">
+
+                    <li class="time">
+                        <p>Time Left</p>
+                        <span id="time"><b>60</b>s</span>
+                    </li>
+
+                    <li class="mistake">
+                        <p>Mistakes</p>
+                        <span id="mistake">0</span>
+                    </li>
+
+                    <li class="wpm">
+                        <p>WPM</p>
+                        <span id="wpm">0</span>
+                    </li>
+
+                    <li class="accuracy">
+                        <p>Accuracy</p>
+                        <span id="accuracy">100%</span>
+                    </li>
+
+                    <button onclick="window.location.reload()">Try Again</button>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

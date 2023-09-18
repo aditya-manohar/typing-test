@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color :dodgerblue;
+}
+
+.container{
+    width: 770px;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.content-box{
+    padding : 15px 21px 0;
+    border-radius: 12px;
+    border : 1px solid #ccc;
+}
+
+.typing-text p{
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top : 17px;
+    padding : 12px 0px;
+    border-top : 1px solid #ccc;
+    justify-content: space-between;
+}
+
+.details{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100% -140px);
+}
+
+.details li{
+    list-style-type: none;
+    color: rgb(46, 46, 46)
+}
+
+.content button{
+    width : 33%;
+    height: 2.4rem;
+    text-align: center;
+    border: none;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.enter{
+    width : 33%;
+    height: 2.4rem;
+    text-align: center;
+    border: none;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+li p{
+    font-size: 21px;
+}
+
+li span{
+    display: block;
+    font-size: 2em;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.input-field{
+width: 0;
+height: 0;
+border: none;
+position: absolute;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.active{
+    color : dodgerblue; 
+}
+
+.active::before{
+    content: "";
+    position: absolute;
+    left : 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: dodgerblue;
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.correct{
+color : dodgerblue;
+}
+
+.incorrect{
+    color : red;
+    background-color: #ffc0cb;
+    outline : 1px solid #fff;
+    border-radius: 4px;
+}
